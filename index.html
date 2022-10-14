@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua rotina</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="/img/estilo-de-vida.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Rotina Semanal</h1>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Tarefa</th>
+            <th>Horário</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-dia">Dia</label>
+          <input id="m-dia" type="text" required />
+  
+          <label for="m-funcao">Tarefa</label>
+          <input id="m-funcao" type="text" required />
+  
+          <label for="m-horario">Horário</label>
+          <input id="m-horario" type="text" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
